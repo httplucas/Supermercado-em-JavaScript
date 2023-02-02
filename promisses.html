@@ -1,0 +1,28 @@
+<html>
+    <body>
+
+    </body> 
+
+    <script>  
+    function testes(){
+        return new Promise(function(resolve,reject){
+
+            const erro = true;
+
+            if (erro){
+                reject('Erro...');
+            }else{
+                resolve ('A promise foi resolvida')
+            }
+        })
+    }
+
+        async function testes2()
+        {
+            await testes2();
+            alert ('olá');
+        }
+        testes2();
+        
+    </script>
+</html>
